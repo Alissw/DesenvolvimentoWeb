@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h4>Cadastro de novos materiais de aula</h4>
+        <fieldset>
+            <legend>Lista de materiais já cadastrados</legend>
+            <ol>
+                <li>Lápis</li>
+                <li>Caneta</li>
+                <li>Papel</li>
+                <li>Tesoura</li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cadastrar novo material</legend>
+            <form action="#">    
+                <input type="text" id="nome" placeholder="Nome"><br>
+                <input type="text" id="preco" placeholder="Preço"><br>
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" min="1" max="100"><br>
+                <label for="devolucao">Devolução:</label>
+                <input type="radio" id="sim" name="devolucao"><label id="sim">Sim</label>
+                <input type="radio" id="nao" name="devolucao"><label id="nao">Não</label><br>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do último material cadastrado</legend>
+            <table  border="1">
+                <tr>
+                    <td><strong>Nome</strong></td><br>
+                    <td>Lápis</td>
+                </tr>
+                <tr>
+                    <td><strong>Preço</strong></td><br>
+                    <td>R$ 1,20</td>
+                </tr>
+                <tr>
+                    <td><strong>Quantidade</strong></td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td><strong>Devolução?</strong></td>
+                    <td>Sim</td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>

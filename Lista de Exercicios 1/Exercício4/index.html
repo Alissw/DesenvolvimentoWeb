@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 4</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color: #2196f3; color: white;">
+        <h3>CADASTRO DE ESTUDANTES</h3><br>
+        <form action="">
+            <fieldset>
+                <legend>Dados escolares</legend>
+                <label for="escolaridade">Escolaridade</label>
+                <input list="escolaridade">
+                <datalist id="escolaridade">
+                    <option value="1º ano"></option>
+                    <option value="2º ano"></option>
+                    <option value="3º ano"></option>
+                </datalist><br>
+
+                <input type="checkbox" id="disciplina1" name="disciplina1" value="matematica">
+                <label for="matematica">Matemática</label><br>
+                <input type="checkbox" id="disciplina2" name="disciplina2" value="portugues">
+                <label for="matematica">Portugês</label><br>
+
+                <label for="professor">Escolha seu professor</label>
+                <input list="professor">
+                <datalist id="professor">
+                    <option value="Juliana Martins"></option>
+                    <option value="Cláudia"></option>
+                    <option value="Gabriel"></option>
+                </datalist><br>            
+            </fieldset>        
+            
+            <fieldset>
+                <legend>Descrição</legend>
+                <textarea rows="15" cols="30"></textarea>
+            </fieldset><br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>       
+    </body>
+</html>
